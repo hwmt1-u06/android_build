@@ -579,14 +579,25 @@ function lunch()
     check_product $product
     if [ $? -ne 0 ]
     then
+<<<<<<< HEAD
         # if we can't find a product, try to grab it off the CM github
+=======
+        # if we can't find the product, try to grab it from our github
+>>>>>>> 18e14bc... build: tools: add in roomservice
         T=$(gettop)
         pushd $T > /dev/null
         build/tools/roomservice.py $product
         popd > /dev/null
         check_product $product
     else
+<<<<<<< HEAD
         build/tools/roomservice.py $product true
+=======
+        T=$(gettop)
+        pushd $T > /dev/null
+        build/tools/roomservice.py $product true
+        popd > /dev/null
+>>>>>>> 18e14bc... build: tools: add in roomservice
     fi
     if [ $? -ne 0 ]
     then
