@@ -43,6 +43,7 @@ if [ "$TARGET_UNIFIED_DEVICE" == "" ] ; then
 fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
-echo "ro.cm.device=$CM_DEVICE"
+# Beanstalk Properties
+echo "ro.beanstalk.device=$BEANSTALK_DEVICE"
 
 echo "# end build properties"
