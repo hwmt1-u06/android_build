@@ -184,16 +184,16 @@ ifneq ($(strip $(TARGET_BUILD_APPS)),)
 all_product_configs := $(call get-product-makefiles,\
     $(SRC_TARGET_DIR)/product/AndroidProducts.mk)
 else
-  ifneq ($(BEANSTALK_BUILD),)
-    all_product_configs := $(shell ls device/*/$(BEANSTALK_BUILD)/beanstalk.mk)
+  ifneq ($(BLISS_BUILD),)
+    all_product_configs := $(shell ls device/*/$(BLISS_BUILD)/bliss.mk)
   else
     # Read in all of the product definitions specified by the AndroidProducts.mk
     # files in the tree.
     all_product_configs := $(get-all-product-makefiles)
-  endif # BEANSTALK_BUILD
+  endif # BLISS_BUILD
 endif
 
-ifeq ($(BEANSTALK_BUILD),)
+ifeq ($(BLISS_BUILD),)
 # Find the product config makefile for the current product.
 # all_product_configs consists items like:
 # <product_name>:<path_to_the_product_makefile>

@@ -33,16 +33,16 @@ except ImportError:
 
 # Config
 # set this to the default remote to use in repo
-default_rem = "Co-BeanStalk"
+default_rem = "TeamBliss"
 # set this to the default revision to use (branch/tag name)
 default_rev = "kk4.4"
 # set this to the remote that you use for projects from your team repos
-# example fetch="https://github.com/Co-BeanStalk"
-default_team_rem = "Co-BeanStalk"
+# example fetch="https://github.com/TeamBliss"
+default_team_rem = "TeamBliss"
 # this shouldn't change unless google makes changes
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
-android_team = "Co-BeanStalk"
+android_team = "TeamBliss"
 
 
 def check_repo_exists(git_data):
@@ -216,13 +216,13 @@ def parse_device_from_folder(device):
     elif len(search) == 1:
         location = search[0]
     else:
-        print("you device can't be found in Co-BeanStalk Sources..")
+        print("you device can't be found in Bliss Sources..")
         location = parse_device_from_manifest(device)
     return location
 
 
 def parse_dependency_file(location):
-    dep_file = "beanstalk.dependencies"
+    dep_file = "bliss.dependencies"
     dep_location = '/'.join([location, dep_file])
     if not os.path.isfile(dep_location):
         print("WARNING: %s file not found" % dep_location)
