@@ -522,17 +522,17 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
     script.FormatPartition("/data")
 
   script.Print("**********************************************");
-  script.Print("* ____                       _        _ _    *");
-  script.Print("*| __ )  ___  __ _ _ __  ___| |_ __ _| | | __*");
-  script.Print("*|  _ \ / _ \/ _` | '_ \/ __| __/ _` | | |/ /*");
-  script.Print("*| |_) |  __/ (_| | | | \__ \ || (_| | |   < *");
-  script.Print("*|____/ \___|\__,_|_| |_|___/\__\__,_|_|_|\_\*");
-  script.Print("*						   *");
+  script.Print("*                 TEAM                       *");
+  script.Print("*                 BLISS                      *");
+  script.Print("*                  IS                        *");
+  script.Print("*                 PROUD                      *");
+  script.Print("*                  TO                        *");
+  script.Print("*			     PRESENT	                 *");
   script.Print("**********************************************");
 
   build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
   script.Print("******************************************");
-  script.Print("************  BEANSTALK ROM  *************");
+  script.Print("**************  BLISS ROM  ***************");
   script.Print("******************************************");
   script.Print("*   Compiled: %s"%(build));
 
