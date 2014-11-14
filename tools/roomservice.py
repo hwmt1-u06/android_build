@@ -33,16 +33,16 @@ except ImportError:
 
 # Config
 # set this to the default remote to use in repo
-default_rem = "TeamBliss"
+default_rem = "TeamBliss-Devices"
 # set this to the default revision to use (branch/tag name)
 default_rev = "kk4.4"
 # set this to the remote that you use for projects from your team repos
-# example fetch="https://github.com/TeamBliss"
-default_team_rem = "TeamBliss"
+# example fetch="https://github.com/TeamBliss-Devices"
+default_team_rem = "TeamBliss-Devices"
 # this shouldn't change unless google makes changes
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
-android_team = "TeamBliss"
+android_team = "TeamBliss-Devices"
 
 
 def check_repo_exists(git_data):
